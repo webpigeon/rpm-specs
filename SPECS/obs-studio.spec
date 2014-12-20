@@ -9,7 +9,7 @@ URL:		https://obsproject.com
 Source0:	https://github.com/jp9000/obs-studio/archive/master.zip
 
 BuildRequires:  cmake gcc-c++ qt5-qtbase-devel qt5-qtx11extras-devel ffmpeg-compat-devel ffmpeg-devel jansson-devel libXinerama-devel  libXinerama libv4l-devel x264-devel libXcomposite-devel libgudev1-devel freetype-devel fontconfig-devel pulseaudio-libs-devel v4l-utils qt5-qtmultimedia-devel faac faac-devel gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-ffmpeg libtool	
-Requires:	qt5 pulseaudio vlc
+Requires:	ffmpeg jansson libXinerama libxkbcommon-x11 pulseaudio qt5-qtx11extras libXcomposite vlc
 
 %description
 
