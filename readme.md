@@ -4,18 +4,18 @@ These are specfiles for building RPMs from. I've created these for my own person
 ## Building the RPMs
 build these using rpmbuild
 
-#copy the specs to the place rpmbuild wants them to be
-mkdir -p ~/rpmbuild/SPECS
-cp specs/*.spec ~/rpmbuild/SPECS/
+    # copy the specs to the place rpmbuild wants them to be
+    mkdir -p ~/rpmbuild/SPECS
+    cp specs/*.spec ~/rpmbuild/SPECS/
 
-# download the sources
-mkdir -p ~/rpmbuild/SOURCES
-cd ~/rpmbuild/SOURCES
-# wget url in source: of the spec
+    # download the sources
+    mkdir -p ~/rpmbuild/SOURCES
+    cd ~/rpmbuild/SOURCES
+    # wget url in source: of the spec
 
-# build the rpms
-cd ~/rpmbuild/SPECS
-rpmbuild -ba specfilename.spec
+    # build the rpms
+    cd ~/rpmbuild/SPECS
+    rpmbuild -ba specfilename.spec
 
 this will put the binary rpm in ~/rpmbuild/RPMS/ and the source RPM in ~/rpmbuild/SRPMs/
 
